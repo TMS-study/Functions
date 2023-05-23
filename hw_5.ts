@@ -3,7 +3,7 @@
 > Если передадим число 100 то, надо вычислить сумму чисел от 0 до 100 (должно получится 5050) */
 
 
-/* function getSum(num1: number): number {
+ function getSum(num1: number): number {
     let sum1 = 0;
     for (let i = 0; i <= num1; i++) {
         sum1 += i;
@@ -12,20 +12,20 @@
 }
 
 console.log(getSum(100));
- */
+ 
 // task 2
 /* Напишите функцию которая в качестве аргумента принимает в себя сумму кредита который хочет получить клиент и верните результат переплаты по кредиту:
 + процентная ставка в год — 17%,
 + количество лет — 5.
 > Мы пишем функцию для хорошего банка, поэтому сумма кредита не увеличивается. */
 
-/* function showOverpayment(num1: number): string {
+ function showOverpayment(num1: number): string {
     let procentInYear = 17;
     let howYear = 5;
     let sumOverpayment = ((num1 * procentInYear) / 100) * howYear;
     return `Ваша переплата составит: ${sumOverpayment}`
 }
-console.log(showOverpayment(10000)) */;
+console.log(showOverpayment(10000);
 
 // task 3
 /* Написать функцию **trimString** которая в качестве аргумента принимает три параметра:
@@ -35,17 +35,17 @@ console.log(showOverpayment(10000)) */;
 После вызова функция должна вернуть переданную строку обрезанную по значениям от и по */
 
 
-/* function cropString(str: string, start: number, finish: number): string  {
+ function cropString(str: string, start: number, finish: number): string  {
 return str.slice(start, finish)
 }
 
-console.log(cropString('обрезатьстроку', 3, 7)); */
+console.log(cropString('обрезатьстроку', 3, 7)); 
 
 // task 4
 /* Написать функцию **getSumNumbers**, которая будет принимать число и вычислять сумму цифр из которых состоит число.
 > Для 2021 это будет 5. */
 
-/* function getSumNumbers(num: number): number{
+function getSumNumbers(num: number): number{
 
     let num1 = String(num);
     let num3 = num1.split('').map(Number);
@@ -56,7 +56,7 @@ console.log(cropString('обрезатьстроку', 3, 7)); */
 return  sum
 }
 
-console.log(getSumNumbers(2020)); */
+console.log(getSumNumbers(2020)); 
 
 // task 5
 /* Написать функцию **`getSum`** которая принимает два целых числа a и b, которые могут быть положительными или отрицательными, найти сумму всех чисел между ними, включая их, и вернуть ее. Если два числа равны, верните a или b.
@@ -91,7 +91,7 @@ function getSum_1(a: number, b: number) {
     }
 }
 
-console.log(getSum_1(3, 2));
+console.log(getSum_1(1, 2));
 
 
 // task 6
@@ -103,7 +103,7 @@ console.log(getSum_1(3, 2));
 
 // task 7
 /* Напишите самовызыввающиеся функцию подсчет факторила числа: число должно передаваться как параметр функции*/
-/*
+
 (function calcFactorial(n: number) {
     let result = 1;
     for (let i = 2; i <= n; i++) {
@@ -115,7 +115,7 @@ console.log(getSum_1(3, 2));
 // ADVANCED level
 // task 1
 /* Реализуйте функцию, который принимает 3 целочисленных значения a, b, c. Функция должна возвращать **true**, если треугольник можно построить со сторонами заданной длины, и **false** в любом другом случае. */
-/*
+
 function isTriangle(a: number, b: number, c: number): boolean {
     if (a <= 0 || b <= 0 || c <= 0){
         return false
@@ -144,7 +144,7 @@ console.log(isTriangle(3, 3, 3))
 + Вы должны настроить некоторые константы для «ставки налога», «цены телефона», «цены аксессуара», также как и переменную для вашего «баланса банковского счета».
 
 + Вам следует определить функции для вычисления налога и для форматирования цены со знаком валюты и округлением до двух знаков после запятой. */
-/*
+
 let bankBalance: number  = 10000;
 let priceAccessory: number = 1000.56;
 let pricePhone: number = 7000.67;
@@ -176,4 +176,3 @@ if (total <= bankBalance){
 else{
     console.log(`Вы не можете себе это позваолить! Итоговая сумма $${pricePurchase.toFixed(2)} превышает остаток на банковском счете на $${(pricePurchase - bankBalance).toFixed(2)}`)
 }
-*/
